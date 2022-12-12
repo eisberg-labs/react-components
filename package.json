@@ -38,7 +38,7 @@
     "@rollup/plugin-terser": "^0.2.0",
     "@rollup/plugin-typescript": "^10.0.1",
     "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
-    "rollup-plugin-commonjs": "^10.1.0",
+    "@rollup/plugin-commonjs": "^23.0.4",
     "@rollup/plugin-replace": "^5.0.1",
     "rollup-plugin-visualizer": "^5.8.3"
   }
