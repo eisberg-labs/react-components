@@ -1,0 +1,59 @@
+{
+  "name": "@eisberg-labs/mui-copy-field",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ana Bujan - Eisberg Labs",
+    "email": "ana@eisberg-labs.com",
+    "url": "https://www.eisberg-labs.com"
+  },
+  "description": "Material-UI text field with copy to clipboard.",
+  "keywords": [
+    "react",
+    "material-ui",
+    "copy",
+    "field",
+    "input",
+    "mui"
+  ],
+  "homepage": "https://github.com/eisberg-labs/react-components/mui-copy-field",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "jest -c ../../jest.config.js",
+    "lint": "eslint {src,__tests__}/**/*",
+    "prettier": "prettier --write \"./(src|__tests__)/**/*.(ts|tsx)\"",
+    "prebuild": "npm run test && npm run lint && npm run prettier",
+    "build": "rollup -c ./rollup.config.js"
+  },
+  "files": [
+    "dist/**",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eisberg-labs/react-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eisberg-labs/react-components/issues"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@mui/icons-material": "^5.0.0",
+    "@mui/material": "^5.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
