@@ -2,12 +2,16 @@
 ## [mui-copy-field](https://github.com/eisberg-labs/mui-copy-field)
 > Material UI TextField with copy to clipboard functionality.
 
-![Example](./docs/demo.gif)
+![Example](https://raw.githubusercontent.com/eisberg-labs/react-components/main/packages/mui-copy-field/docs/demo.gif)
 
 If you 👍 or use this project, consider giving it a ★, thanks! 🙌
 
 ## Installation
-
+Since this is an extension of mui components, prerequisite is to have material library already installed.
+```sh
+npm i --save @mui/material @emotion/react @emotion/styled @mui/icons-material
+```
+As for the mui-copy-field:
 ```sh
 npm i --save @eisberg-labs/mui-copy-field
 ```
