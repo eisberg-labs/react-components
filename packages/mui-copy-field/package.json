@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/mui-copy-field",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "author": {
     "name": "Ana Bujan - Eisberg Labs",
     "email": "ana@eisberg-labs.com",
@@ -54,12 +54,12 @@
     "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.10.0",
-    "@mui/material": "^5.10.0"
+    "@mui/material": "^5.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "publishConfig": {
     "access": "public"
