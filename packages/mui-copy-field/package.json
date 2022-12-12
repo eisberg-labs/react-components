@@ -30,7 +30,7 @@
     "lint": "eslint {src,__tests__}/**/*",
     "prettier": "prettier --write \"./(src|__tests__)/**/*.(ts|tsx)\"",
     "prebuild": "npm run test && npm run lint && npm run prettier",
-    "build": "rollup -c ./rollup.config.js"
+    "build": "rollup -c ../../rollup.config.js"
   },
   "files": [
     "dist/**",
