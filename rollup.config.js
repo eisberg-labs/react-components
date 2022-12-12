@@ -1,11 +1,9 @@
 import excludeDependenciesFromBundle from "rollup-plugin-exclude-dependencies-from-bundle";
-import nodeGlobals from 'rollup-plugin-node-globals';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import terser  from '@rollup/plugin-terser';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
-import replace from '@rollup/plugin-replace';
 import * as fs from "fs";
 import path from "path";
 
@@ -54,8 +52,6 @@ export default {
     excludeDependenciesFromBundle({peerDependencies: true}),
     babel(babelOptions),
     commonjs(commonjsOptions),
-    replace({ preventAssignment: true, 'process.env.NODE_ENV': JSON.stringify('production') }),
-    nodeGlobals(),
     terser(),
     // visualizer({
     //   filename: 'bundle-analysis.html',
