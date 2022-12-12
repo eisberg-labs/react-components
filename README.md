@@ -13,6 +13,12 @@ React components are handled by Lerna. Common commands:
 - `lerna run test`
 - `lerna run lint`
 - `lerna run prettier`
+## Publishing
+```
+lerna run build
+lerna version --no-private
+lerna publish from-git --no-private
+```
 
 ## License
 MIT © [Eisberg Labs](http://www.eisberg-labs.com)

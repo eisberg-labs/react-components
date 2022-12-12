@@ -13,7 +13,7 @@ npm i --save @eisberg-labs/mui-copy-field
 ```
 
 ## Usage
-Take a look at [Storybook examples](https://github.com/eisberg-labs/mui-copy-field/blob/main/src/copy-field.stories.tsx) for example usage.
+Take a look at [Storybook examples](https://www.amarjanica.com/projects/react-components/?path=/docs/react-components-copyfield--docs) for example usage.
 You can use it like `TextField`:
 ```jsx
 import {DefaultCopyField} from '@eisberg-labs/mui-copy-field';

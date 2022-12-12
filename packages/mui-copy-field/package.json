@@ -34,6 +34,7 @@
   },
   "files": [
     "dist/**",
+    "docs/**",
     "package.json",
     "README.md",
     "LICENSE"
