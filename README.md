@@ -19,6 +19,7 @@ React components are handled by Lerna. Common commands:
 lerna run build
 lerna version --no-private
 lerna publish from-git --no-private
+lerna publish from-package --registry https://npm.pkg.github.com
 ```
 
 ## License
