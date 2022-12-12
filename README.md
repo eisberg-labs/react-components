@@ -1,3 +1,4 @@
+[![CI](https://github.com/eisberg-labs/react-components/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/eisberg-labs/react-components/actions/workflows/ci.yml)
 # React Components
 
 Welcome to Eisberg Labs React Components, 
