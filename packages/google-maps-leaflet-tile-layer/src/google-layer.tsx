@@ -11,6 +11,6 @@ export interface Props {
 
 const defaultProps: Props & TileLayerOptions = { subdomains: ['mt0', 'mt1', 'mt2'] };
 
-export default function GoogleLayer({ subdomains }: Props & TileLayerOptions = defaultProps) {
-  return <TileLayer url="https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}" subdomains={subdomains} />;
+export function GoogleLayer(props: Props & TileLayerOptions = defaultProps) {
+  return <TileLayer {...props} url="https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}" />;
 }

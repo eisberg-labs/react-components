@@ -25,6 +25,8 @@ Take a look at [Storybook examples](https://www.amarjanica.com/projects/react-co
 </MapContainer>
 ```
 
+# Api 
+
 Name | Type | Default | Description
 ----------|------|-----------|----------
 subdomains | `string[]` | `['mt0', 'mt1', 'mt2']` | If one subdomain is down, try another.
