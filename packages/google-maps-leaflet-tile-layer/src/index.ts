@@ -1,1 +1,1 @@
-export * from './google-tile-layer';
+export * from './google-layer';
