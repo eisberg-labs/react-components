@@ -7,7 +7,7 @@
 If you 👍 or use this project, consider giving it a ★, thanks! 🙌
 
 # Installation
-Prerequisite is to have material library already installed.
+Prerequisite is to have leaflet library already installed.
 ```sh
 npm i --save leaflet@1.9.3 react-leaflet@^4.2.0
 ```
@@ -20,9 +20,22 @@ npm i --save @eisberg-labs/google-maps-leaflet-tile-layer
 Take a look at [Storybook examples](https://www.amarjanica.com/projects/react-components) for example usage.
 
 ```jsx
-<MapContainer id="map" zoom={15} center={[0, 0]}>
-  <GoogleLayer maxZoom={20}/>
-</MapContainer>
+import {MapContainer, Marker} from 'react-leaflet';
+import * as L from 'leaflet';
+import "leaflet/dist/leaflet.css";
+
+export const Basic = () => {
+
+  return (
+    <MapContainer id="map" zoom={10} center={[45, 16]} style={{
+      height: 300,
+      width: '100%',
+      position: 'relative', opacity: 1,
+    }}>
+      <GoogleLayer maxZoom={20}/>
+    </MapContainer>
+  )
+}
 ```
 
 # Api 
