@@ -1,7 +1,6 @@
 /**
  * @jest-environment jsdom
  */
-
 import '@testing-library/jest-dom/extend-expect';
 import { CopyField, DefaultCopyField } from '../src';
 import { render } from '@testing-library/react';
