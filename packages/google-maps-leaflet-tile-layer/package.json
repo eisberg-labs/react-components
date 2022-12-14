@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/google-maps-leaflet-tile-layer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Google Maps tile layer for react leaflet",
   "keywords": [
     "react-leaflet",

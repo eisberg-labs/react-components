@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/eisberg-labs/react-components/compare/@eisberg-labs/google-maps-leaflet-tile-layer@1.0.2...@eisberg-labs/google-maps-leaflet-tile-layer@1.0.3) (2022-12-14)
+
+### Bug Fixes
+
+- **google-layer:** fix default export and impl props ([74dac9e](https://github.com/eisberg-labs/react-components/commit/74dac9ebef3bedac945ec2adae60eb1bd4aae9a9))
+
 ## [1.0.2](https://github.com/eisberg-labs/react-components/compare/@eisberg-labs/google-maps-leaflet-tile-layer@1.0.1...@eisberg-labs/google-maps-leaflet-tile-layer@1.0.2) (2022-12-14)
 
 ### Bug Fixes
