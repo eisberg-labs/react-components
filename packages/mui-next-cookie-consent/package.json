@@ -53,5 +53,9 @@
     "@mui/material": "^5.10.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "gitHead": "199436f4e99c9b8ff3fd8c8a3ac2bf3f020f9afd",
+  "publishConfig": {
+    "access": "public"
   }
 }
