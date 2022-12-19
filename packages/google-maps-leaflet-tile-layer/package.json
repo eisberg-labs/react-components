@@ -1,13 +1,13 @@
 {
   "name": "@eisberg-labs/google-maps-leaflet-tile-layer",
   "version": "1.0.5",
-  "description": "Google Maps tile layer for react leaflet",
+  "description": "Google Maps tile layer for react leaflet.",
   "keywords": [
     "react-leaflet",
     "google",
     "maps"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/react-leaflet-google-maps-layer",
+  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/google-maps-leaflet-tile-layer#readme",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -57,5 +57,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b"
 }
