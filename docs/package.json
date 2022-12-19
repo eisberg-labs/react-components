@@ -12,6 +12,7 @@
     "@eisberg-labs/mui-next-cookie-consent": "*",
     "@eisberg-labs/mui-copy-field": "*",
     "@eisberg-labs/google-maps-leaflet-tile-layer": "*",
+    "@eisberg-labs/next-google-adsense": "*",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
@@ -19,7 +20,6 @@
     "highlight.js": "^11.7.0",
     "react-leaflet": "^4.2.0",
     "leaflet": "^1.9.3"
-
   },
   "scripts": {
     "dev": "next dev",
