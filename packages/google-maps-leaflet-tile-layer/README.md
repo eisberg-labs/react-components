@@ -24,8 +24,6 @@ npm i --save @eisberg-labs/google-maps-leaflet-tile-layer
 
 ## Usage
 
-Take a look at [Storybook examples](https://www.amarjanica.com/projects/react-components) for example usage.
-
 ```jsx
 import {MapContainer, Marker} from 'react-leaflet';
 import * as L from 'leaflet';
