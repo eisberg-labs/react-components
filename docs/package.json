@@ -1,0 +1,51 @@
+{
+  "name": "@eisberg-labs/docs",
+  "author": {
+    "name": "Ana Bujan - Eisberg Labs",
+    "email": "ana@eisberg-labs.com",
+    "url": "https://www.eisberg-labs.com"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@eisberg-labs/next-google-analytics": "*",
+    "@eisberg-labs/mui-next-cookie-consent": "*",
+    "@eisberg-labs/mui-copy-field": "*",
+    "@eisberg-labs/google-maps-leaflet-tile-layer": "*",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "highlight.js": "^11.7.0",
+    "react-leaflet": "^4.2.0",
+    "leaflet": "^1.9.3"
+
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export"
+  },
+  "devDependencies": {
+    "@next/font": "13.0.7",
+    "@types/leaflet": "^1.9.0",
+    "@types/node": "18.11.17",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.0.7",
+    "next": "13.0.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.4",
+    "markdown-to-jsx": "^7.1.8",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.2.4",
+    "ts-jest": "^29.0.3",
+    "jest": "^29.3.1"
+  }
+}
