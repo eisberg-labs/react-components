@@ -3,7 +3,8 @@
   "private": true,
   "description": "Eisberg Labs collection of React Components.",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "docs"
   ],
   "config": {
     "commitizen": {
@@ -46,5 +47,12 @@
     "sass": "^1.56.2",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "docs:dev": "npm --workspace docs run dev",
+    "docs:build": "npm --workspace docs run build",
+    "docs:start": "npm --workspace docs run start",
+    "docs:lint": "npm --workspace docs run lint",
+    "docs:export": "npm --workspace docs run export"
   }
 }

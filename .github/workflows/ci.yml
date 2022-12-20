@@ -20,6 +20,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Bootstrap
-        run: npx lerna bootstrap
+        run: npm i
       - name: Test and Build
-        run: npx lerna run build
+        run: echo "NEXT_PUBLIC_PRIMARY=#27509B" > docs/.env && lerna run build --include-dependencies

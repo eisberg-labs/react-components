@@ -2,11 +2,11 @@
 
 > React Material Ui cookie consent dialog, compatible with Nextjs cookies.
 
-# Installation
+## Installation
 
 Since this is an extension of mui components, prerequisite is to have material library already installed.
 
-```sh
+```bash
 npm i --save @mui/material
 ```
 
@@ -14,12 +14,15 @@ npm i --save @mui/material
 npm i --save @eisberg-labs/mui-next-cookie-consent
 ```
 
-# Usage
-Just import the template with defaults:
+## Usage
+Just import the template with defaults:  
+
 ```jsx
 <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
 ```
+
 I use it in a nextjs app like this:  
+
 ```jsx
 
 const CookieConsent = dynamic(() => import('@eisberg-labs/mui-next-cookie-consent'), {suspense: true});
@@ -43,7 +46,7 @@ export default function Layout({ children }) {
 ```
 You can change the default styling, cookie key, set expires, register callback on Accept.
 
-# Api
+## Api
 
 | Name          | Type                            | Default                                            | Description                                   |
 |---------------|---------------------------------|----------------------------------------------------|-----------------------------------------------|
@@ -55,10 +58,7 @@ You can change the default styling, cookie key, set expires, register callback o
 | sx            | SxProps<Theme>                  |                                                    | Define styling of the cookie consent container                                              |
 | butttonSx     | SxProps<Theme>                  |                                                    | Define styling of the button.                                              |
 
-# Demo
 
-[Try the Demo](https://www.amarjanica.com/projects/react-components)
-
-# License
+## License
 
 MIT © [Eisberg Labs](http://www.eisberg-labs.com)

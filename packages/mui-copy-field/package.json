@@ -1,7 +1,7 @@
 {
   "name": "@eisberg-labs/mui-copy-field",
   "version": "2.0.1",
-  "description": "Material-UI text field with copy to clipboard.",
+  "description": "Material-UI text field with copy to clipboard functionality.",
   "keywords": [
     "react",
     "material-ui",
@@ -10,7 +10,7 @@
     "input",
     "mui"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/mui-copy-field",
+  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/mui-copy-field#readme",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -63,5 +63,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b"
 }

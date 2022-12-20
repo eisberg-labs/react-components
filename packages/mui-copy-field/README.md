@@ -6,19 +6,20 @@
 
 If you 👍 or use this project, consider giving it a ★, thanks! 🙌
 
-# Installation
-Since this is an extension of mui components, prerequisite is to have material library already installed.
-```sh
+## Installation
+Since this is an extension of mui components, prerequisite is to have material library already installed.  
+
+```bash
 npm i --save @mui/material @emotion/react @emotion/styled @mui/icons-material
 ```
-As for the mui-copy-field:
-```sh
+
+As for the mui-copy-field:  
+
+```bash
 npm i --save @eisberg-labs/mui-copy-field
 ```
 
-# Usage
-Take a look at [Storybook examples](https://www.amarjanica.com/projects/react-components/?path=/docs/react-components-copyfield--docs) for example usage.
-
+## Usage
 ```jsx
 import {DefaultCopyField} from '@eisberg-labs/mui-copy-field';
 
@@ -27,7 +28,8 @@ import {DefaultCopyField} from '@eisberg-labs/mui-copy-field';
   value={"Enter text"} />
 ```
 
-or like `TextField` with extra props:
+or:  
+
 ```jsx
 import {CopyField} from '@eisberg-labs/mui-copy-field';
 
@@ -40,7 +42,7 @@ import {CopyField} from '@eisberg-labs/mui-copy-field';
 />
 ```
 
-# Api
+## Api
 
 Name | Type | Default | Description
 ----------|------|-----------|----------
@@ -48,9 +50,7 @@ copyTooltip | string | "Copy" | Copy button tooltip
 onCopySuccess | Function | undefined | If defined, fired on copy to clipboard
 onCopyError | Function | undefined | If defined, fired on copy to clipboard error
 
+All `TextField` props are also supported.  
 
-# Demo
-[Try the Demo](https://www.amarjanica.com/projects/react-components/?path=/docs/react-components-copyfield--docs)
-
-# License
+## License
 MIT © [Eisberg Labs](http://www.eisberg-labs.com)

@@ -9,7 +9,7 @@
     "cookie",
     "consent"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components",
+  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/mui-next-cookie-consent#readme",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -54,7 +54,7 @@
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
-  "gitHead": "199436f4e99c9b8ff3fd8c8a3ac2bf3f020f9afd",
+  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b",
   "publishConfig": {
     "access": "public"
   }

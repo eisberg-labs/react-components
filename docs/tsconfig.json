@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "./src",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "stripInternal": true,
+    "jsx": "preserve",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "incremental": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "suppressExcessPropertyErrors": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "jsxImportSource": "@emotion/react",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@styles/*": ["../assets/styles/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "typings.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dev_server.js",
+    "cypress",
+    "cypress.config.ts"
+  ]
+}

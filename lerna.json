@@ -3,7 +3,6 @@
   "useWorkspaces": true,
   "version": "independent",
   "npmClient": "npm",
-  "packages": ["packages/*"],
   "command": {
     "publish": {
       "conventionalCommits": true
