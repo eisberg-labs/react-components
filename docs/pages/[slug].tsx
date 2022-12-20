@@ -28,7 +28,9 @@ export default function Page({projects, readme, changelog, title, description}){
 }
 
 export function getStaticPaths() {
+  console.log('Pulling data for project lists')
   const projects = readProjectDirs();
+  console.log('Projects read', projects);
 
   return {
     paths: projects.map(project => ({params: {slug: project}})),

@@ -22,7 +22,4 @@ jobs:
       - name: Bootstrap
         run: npm i
       - name: Test and Build
-        run: lerna run build --include-dependencies
-        env:
-          NEXT_PUBLIC_PRIMARY: #27509B
-          NEXT_PUBLIC_BASE: https://www.amarjanica.com/projects/react-components
+        run: echo "NEXT_PUBLIC_PRIMARY=#27509B" > docs/.env && lerna run build --include-dependencies
