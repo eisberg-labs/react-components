@@ -2,10 +2,6 @@ name: CI
 
 on: [push, pull_request]
 
-env:
-  NEXT_PUBLIC_PRIMARY: #27509B
-  NEXT_PUBLIC_BASE: https://www.amarjanica.com/projects/react-components
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
@@ -27,5 +23,6 @@ jobs:
         run: npm i
       - name: Test and Build
         run: lerna run build --include-dependencies
-      - name: Build Docs
-        run: npm run docs:build
+        env:
+          NEXT_PUBLIC_PRIMARY: #27509B
+          NEXT_PUBLIC_BASE: https://www.amarjanica.com/projects/react-components
