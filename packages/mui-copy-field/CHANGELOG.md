@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/eisberg-labs/react-components/compare/@eisberg-labs/mui-copy-field@2.0.1...@eisberg-labs/mui-copy-field@2.0.2) (2022-12-20)
+
+**Note:** Version bump only for package @eisberg-labs/mui-copy-field
+
 ## [2.0.1](https://github.com/eisberg-labs/react-components/compare/@eisberg-labs/mui-copy-field@2.0.0...@eisberg-labs/mui-copy-field@2.0.1) (2022-12-14)
 
 ### Features
