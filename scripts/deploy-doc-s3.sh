@@ -51,7 +51,7 @@ function deploy() {
 
   remove_html_extension $TARGET $EXCLUDES_REGEX
   upload_to_s3 $TARGET $BUCKET $DEST
-#  rm -r $TARGET
+  rm -r $TARGET
 }
 
 deploy "$@"
