@@ -1,0 +1,44 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+env:
+  AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+  AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+  AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+  NEXT_PUBLIC_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_ANALYTICS_ID }}
+  NEXT_PUBLIC_ADSENSE_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_ADSENSE_CLIENT_ID }}
+  NEXT_PUBLIC_PRIMARY: ${{ secrets.NEXT_PUBLIC_PRIMARY }}
+  TARGET: docs/out
+  EXCLUSIONS: ^docs\/out\/(index|404).html$
+  BUCKET: ${{ secrets.BUCKET }}
+  DEST: projects/react-components
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - name: Use Aws cli
+        uses: unfor19/install-aws-cli-action@v1
+      - run: echo "NEXT_PUBLIC_ANALYTICS_ID=$NEXT_PUBLIC_ANALYTICS_ID" >> docs/.env
+      - run: echo "NEXT_PUBLIC_ADSENSE_CLIENT_ID=$NEXT_PUBLIC_ADSENSE_CLIENT_ID" >> docs/.env
+      - run: echo "NEXT_PUBLIC_PRIMARY=$NEXT_PUBLIC_PRIMARY" >> docs/.env
+      - name: Install dependencies
+        run: npm i
+      - name: Build components and docs
+        run: npx lerna run build --include-dependencies
+      - name: Export
+        run: npm --workspace docs run export
+      - name: Deploy to s3
+        run: ./scripts/deploy-doc-s3.sh "$TARGET" "$EXCLUSIONS" "$BUCKET" "$DEST"
