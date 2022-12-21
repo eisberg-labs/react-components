@@ -10,10 +10,6 @@ env:
   NEXT_PUBLIC_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_ANALYTICS_ID }}
   NEXT_PUBLIC_ADSENSE_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_ADSENSE_CLIENT_ID }}
   NEXT_PUBLIC_PRIMARY: ${{ secrets.NEXT_PUBLIC_PRIMARY }}
-  TARGET: docs/out
-  EXCLUSIONS: ^docs\/out\/(index|404).html$
-  BUCKET: ${{ secrets.BUCKET }}
-  DEST: projects/react-components
   NEXT_PUBLIC_BASE: https://www.amarjanica.com/projects/react-components
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -43,4 +39,9 @@ jobs:
       - name: Export
         run: npm --workspace docs run export
       - name: Deploy to s3
-        run: ./scripts/deploy-doc-s3.sh "$TARGET" "$EXCLUSIONS" "$BUCKET" "$DEST"
+        uses: eisberg-labs/static-website-to-s3@v2
+        with:
+          target: docs/out
+          dest: projects/react-components
+          exclusions: ^docs\/out\/(index|404).html$
+          bucket: ${{ secrets.BUCKET }}
