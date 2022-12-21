@@ -14,6 +14,7 @@ env:
   EXCLUSIONS: ^docs\/out\/(index|404).html$
   BUCKET: ${{ secrets.BUCKET }}
   DEST: projects/react-components
+  NEXT_PUBLIC_BASE: https://www.amarjanica.com/projects/react-components
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,6 +35,7 @@ jobs:
       - run: echo "NEXT_PUBLIC_ANALYTICS_ID=$NEXT_PUBLIC_ANALYTICS_ID" >> docs/.env
       - run: echo "NEXT_PUBLIC_ADSENSE_CLIENT_ID=$NEXT_PUBLIC_ADSENSE_CLIENT_ID" >> docs/.env
       - run: echo "NEXT_PUBLIC_PRIMARY=$NEXT_PUBLIC_PRIMARY" >> docs/.env
+      - run: echo "NEXT_PUBLIC_BASE=$NEXT_PUBLIC_BASE" >> docs/.env
       - name: Install dependencies
         run: npm i
       - name: Build components and docs
