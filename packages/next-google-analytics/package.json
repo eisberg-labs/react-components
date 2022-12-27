@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/next-google-analytics",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "NextJS React Component for Google universal analytics.",
   "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/next-google-analytics#readme",
   "repository": {
@@ -10,7 +10,13 @@
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
-  "keywords": ["nextjs", "google-analytics", "universal", "google", "analytics"],
+  "keywords": [
+    "nextjs",
+    "google-analytics",
+    "universal",
+    "google",
+    "analytics"
+  ],
   "license": "MIT",
   "author": {
     "name": "Ana Bujan - Eisberg Labs",
@@ -43,7 +49,7 @@
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "next": "12.0.0 || 13.0.0",
+    "next": "^12.0.0 || ^13.0.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   }
