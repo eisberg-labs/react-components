@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/eisberg-labs/react-components/compare/v3.0.0...v3.0.1) (2023-01-02)
+
+**Note:** Version bump only for package @eisberg-labs/google-maps-leaflet-tile-layer
+
 # 3.0.0 (2022-12-27)
 
 ### Bug Fixes
