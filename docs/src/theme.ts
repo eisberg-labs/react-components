@@ -8,7 +8,7 @@ export const defaultTheme = responsiveFontSizes(createTheme({
     },
   },
   typography: {
-    fontFamily: "'Josefin Sans', sans-serif"
+    fontFamily: "'Roboto', sans-serif"
   }
 }));
 

@@ -1,7 +1,8 @@
 @import 'mixins';
 
 :root {
-  --heading-font-family: 'Josefin Sans', sans-serif;
+  --heading-font-family: 'Roboto', sans-serif;
+  --base-color: #27509B;
 }
 
 html, body {
@@ -9,10 +10,12 @@ html, body {
   padding: 0;
   font-family: var(--heading-font-family);
 }
+
 h1, h2 {
   font-family: var(--heading-font-family);
   text-transform: uppercase;
 }
+
 .nav-open .wrapper {
   left: 0;
   @include transform-translate-x(-230px);
@@ -21,6 +24,7 @@ h1, h2 {
 .wrapper .navbar-collapse {
   display: none;
 }
+
 .wrapper {
   -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -30,6 +34,7 @@ h1, h2 {
   left: 0;
   background-color: white;
 }
+
 .burger-menu .wrapper {
   -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -39,6 +44,7 @@ h1, h2 {
   left: 0;
   background-color: white;
 }
+
 .nav-open .burger-menu .wrapper {
   left: 0;
   -webkit-transform: translate3d(-230px, 0, 0);
@@ -47,33 +53,40 @@ h1, h2 {
   -ms-transform: translate3d(-230px, 0, 0);
   transform: translate3d(-230px, 0, 0);
 }
-.nav-open{
-& .navbar-collapse{
+
+.nav-open {
+  & .navbar-collapse {
     @include transform-translate-x(0px);
     display: block;
   }
-& .wrapper{
+
+  & .wrapper {
     left: 0;
     @include transform-translate-x(-230px);
   }
-& .navbar-translate{
+
+  & .navbar-translate {
     @include transform-translate-x(-230px);
   }
 
 }
-.wrapper .navbar-collapse{
+
+.wrapper .navbar-collapse {
   display: none;
 }
-.wrapper{
+
+.wrapper {
   //    @include transform-translate-x(0px);
-  @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+  @include transition(0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
   left: 0;
   background-color: white;
 }
-.section-dark{
+
+.section-dark {
   position: relative;
   background-color: #0b1011;
 }
+
 .section-image,
 .section-gold,
 .section-dark {
@@ -94,11 +107,13 @@ h1, h2 {
 .section-dark .card-plain .card-category {
   color: rgba(255, 255, 255, 0.7);
 }
+
 .section-image hr,
 .section-gold hr,
 .section-dark hr {
   border-color: rgba(255, 255, 255, 0.19);
 }
+
 .section-dark .card-profile.card-plain .card-description {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -111,17 +126,21 @@ h1, h2 {
 .page-header.section-dark .category-absolute {
   z-index: 1;
 }
+
 .animation-transition-fast, .btn-hover, .dropdown-menu .dropdown-item, .filter, .tagsinput .tag, .tagsinput-remove-link, [data-toggle=collapse] i {
   transition: all .15s linear;
 }
+
 .page-header.section-dark .category-absolute, .page-header.section-dark .content-center {
   z-index: 1;
 }
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
+
 .page-header {
   background-color: #b2afab;
   background-position: 50%;
@@ -137,8 +156,9 @@ h1, h2 {
   justify-content: center;
   -ms-flex-pack: center;
 }
+
 .page-header .filter:after {
-  background-color: rgba(255, 255, 255,.75);
+  background-color: rgba(255, 255, 255, .75);
   content: "";
   display: block;
   height: 100%;
@@ -148,6 +168,7 @@ h1, h2 {
   width: 100%;
   z-index: 1;
 }
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -155,6 +176,7 @@ h1, h2 {
   margin-right: auto;
   margin-left: auto;
 }
+
 .title-brand {
   max-width: 730px;
   margin: 0 auto;
@@ -163,13 +185,57 @@ h1, h2 {
   color: rgba(0, 0, 0, 0.9);
   display: block;
 }
+
 .presentation-subtitle {
   color: #fff;
 }
+
 h1.presentation-title {
-  color: #27509B;
+  color: var(--base-color);
 }
 
 .MuiContainer-root img[alt=Example] {
   width: 100%;
+}
+
+blockquote {
+  position: relative;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  line-height: 1.7;
+  font-size: 1.1em;
+  color: #666;
+  background: #fff;
+  border-left: 6px solid var(--base-color);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  thead tr {
+    background-color: var(--base-color);
+    color: #ffffff;
+    text-align: left;
+  }
+  th, td {
+    padding: 12px 15px;
+  }
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  tbody tr:last-of-type {
+    border-bottom: 2px solid var(--base-color);
+  }
+  tbody tr.active-row {
+    font-weight: bold;
+    color: var(--base-color);
+  }
 }

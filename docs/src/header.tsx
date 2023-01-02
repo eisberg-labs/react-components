@@ -27,7 +27,7 @@ export default function Header({projects}) {
       color={"transparent"}
     >
       <Toolbar sx={{display: 'flex'}}>
-        <Link href={"/"}>
+        <Link href={"/"} style={{textDecoration: 'none'}}>
           <Stack spacing={1} direction={"row"}>
             <img alt={"eisberg labs logo"}
                  src="https://www.eisberg-labs.com/assets/img/favicon-32x32.png"/>
@@ -36,7 +36,8 @@ export default function Header({projects}) {
                         sx={{
                           mr: 2,
                           display: {xs: 'none', md: 'flex'},
-                          textTransform: 'uppercase'
+                          textTransform: 'uppercase',
+                          textDecoration: 'none'
                         }}>Eisberg Labs Reactive Components</Typography>
           </Stack>
         </Link>
