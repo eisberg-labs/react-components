@@ -1,0 +1,59 @@
+{
+  "name": "@eisberg-labs/use-google-charts",
+  "version": "3.0.1",
+  "description": "Google charts context loader for React components, loosely typed.",
+  "keywords": [
+    "google-charts",
+    "react",
+    "google",
+    "charts"
+  ],
+  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/use-google-charts",
+  "bugs": {
+    "url": "https://github.com/eisberg-labs/react-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eisberg-labs/react-components.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ana Bujan - Eisberg Labs",
+    "email": "ana@eisberg-labs.com",
+    "url": "https://www.eisberg-labs.com"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist/**",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prebuild": "npm run test && npm run lint && npm run prettier",
+    "build": "rollup -c ../../rollup.config.js",
+    "lint": "eslint {src,__tests__}/**/*",
+    "prettier": "prettier --write \"./(src|__tests__)/**/*.(ts|tsx)\"",
+    "test": "jest -c ../../jest.config.js"
+  },
+  "dependencies": {
+    "@charlietango/use-script": "^2.3.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
