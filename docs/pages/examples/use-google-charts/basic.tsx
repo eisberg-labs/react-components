@@ -1,5 +1,5 @@
 import {useGoogleCharts} from '@eisberg-labs/use-google-charts';
-import {MutableRefObject, useEffect, useRef} from 'react';
+import {useRef} from 'react';
 
 export default function BasicExample(){
   const chartRef = useRef<HTMLDivElement>();
