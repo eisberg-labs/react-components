@@ -1,4 +1,3 @@
-import Markdown from 'markdown-to-jsx';
 import {readFileFrom, readProjectDirs} from '../src/server-util';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github-dark.css';
@@ -6,8 +5,9 @@ import {useEffect} from 'react';
 import Header from 'header';
 import Head from 'next/head';
 import {Container} from '@mui/material';
+import ReactMarkdown from 'react-markdown'
 
-export default function Page({projects, readme, changelog, title, description}){
+export default function Page({projects, readme, changelog, title, description, examples, slug}){
   useEffect(()=>{
     hljs.highlightAll();
   }, [])
@@ -20,9 +20,16 @@ export default function Page({projects, readme, changelog, title, description}){
     /></Head>
     <Header projects={projects}/>
     <Container maxWidth={"md"}>
-      <Markdown>{readme}</Markdown>
-      <Markdown>{changelog}</Markdown>
+      <ReactMarkdown>{readme}</ReactMarkdown>
+      {
+        (examples.length) ? <h2>Examples</h2> : <></>
+      }
+      {
+        examples.map(example => <iframe key={example} src={`/projects/react-components/examples/${slug}/${example}`}/>)
+      }
+      <ReactMarkdown>{changelog}</ReactMarkdown>
     </Container>
+
 
   </>)
 }
@@ -46,13 +53,17 @@ export function getStaticProps({params}){
   const changelog = readFileFrom(slug, 'CHANGELOG.md')
   const title = `${pkg.name} - Eisberg Labs React Components`;
   const description = pkg.description;
-
+  const examples = {
+    'use-google-charts': ['basic']
+  };
   return {
     props: {
+      slug,
       title, description,
       readme,
       changelog,
-      projects
+      projects,
+      examples: examples[slug] || []
     }
   }
 }
