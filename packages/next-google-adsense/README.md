@@ -25,16 +25,16 @@ export default function Page(){
 }
 ```
 
-To include an ad block:  
+To include an ad unit:  
 
 ```jsx
-import {Adblock} from "@eisberg-labs/next-google-adsense";
+import {AdUnit} from "@eisberg-labs/next-google-adsense";
 
 export default function Page() {
   return (
     <>
       <Adsense client_id="myClientId"/>
-      <Adblock className="adsbygoogle block"
+      <AdUnit className="adsbygoogle block"
                 data-ad-client="..."
                 data-ad-slot="..."
                 data-ad-format="auto"

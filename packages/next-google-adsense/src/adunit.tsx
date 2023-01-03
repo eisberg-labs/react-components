@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 export type Props = React.InsHTMLAttributes<HTMLModElement>;
-export default function Adblock(props: Props) {
+export default function Adunit(props: Props) {
   useEffect(() => {
     try {
       if (window.hasOwnProperty('adsbygoogle')) {

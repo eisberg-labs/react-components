@@ -1,4 +1,4 @@
 import Adsense, { Props as AdsenseProps } from './adsense';
-import Adblock, { Props as AdblockProps } from './adblock';
-export { Adblock, AdsenseProps, AdblockProps };
+import AdUnit, { Props as AdUnitProps } from './adunit';
+export { AdUnit, AdsenseProps, AdUnitProps };
 export default Adsense;
