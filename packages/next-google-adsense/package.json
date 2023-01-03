@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/next-google-adsense",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "NextJS React Component for Google Adsense.",
   "keywords": [
     "nextjs",
