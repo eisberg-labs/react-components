@@ -39,7 +39,7 @@ jobs:
       - name: Export
         run: npm --workspace docs run export
       - name: Deploy to s3
-        uses: eisberg-labs/static-website-to-s3@v3
+        uses: eisberg-labs/static-website-to-s3@v4
         with:
           target: docs/out
           dest: projects/react-components
