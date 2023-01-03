@@ -2,20 +2,20 @@
   "name": "@eisberg-labs/next-google-adsense",
   "version": "3.0.1",
   "description": "NextJS React Component for Google Adsense.",
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/next-google-adsense#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eisberg-labs/react-components.git"
-  },
-  "bugs": {
-    "url": "https://github.com/eisberg-labs/react-components/issues"
-  },
   "keywords": [
     "nextjs",
     "adsense",
     "google",
     "autoads"
   ],
+  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/next-google-adsense#readme",
+  "bugs": {
+    "url": "https://github.com/eisberg-labs/react-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eisberg-labs/react-components.git"
+  },
   "license": "MIT",
   "author": {
     "name": "Ana Bujan - Eisberg Labs",

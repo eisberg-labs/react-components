@@ -239,3 +239,20 @@ table {
     color: var(--base-color);
   }
 }
+iframe{
+  box-shadow: none !important;
+  width: 100%;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  overflow: clip !important;
+  border-width: 0px;
+  height: 500px;
+  min-height: 0px;
+  overflow: auto;
+  opacity: 1;
+  z-index: 1;
+  background-color: white;
+  user-select: initial;
+  pointer-events: initial;
+}

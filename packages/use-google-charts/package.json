@@ -1,15 +1,14 @@
 {
-  "name": "@eisberg-labs/next-google-analytics",
+  "name": "@eisberg-labs/use-google-charts",
   "version": "3.0.1",
-  "description": "NextJS React Component for Google universal analytics.",
+  "description": "Google charts context loader for React components, loosely typed.",
   "keywords": [
-    "nextjs",
-    "google-analytics",
-    "universal",
+    "google-charts",
+    "react",
     "google",
-    "analytics"
+    "charts"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/next-google-analytics#readme",
+  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/use-google-charts",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -43,14 +42,18 @@
     "prettier": "prettier --write \"./(src|__tests__)/**/*.(ts|tsx)\"",
     "test": "jest -c ../../jest.config.js"
   },
+  "dependencies": {
+    "@charlietango/use-script": "^2.3.0"
+  },
   "devDependencies": {
-    "next": "12.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "next": "^12.0.0 || ^13.0.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

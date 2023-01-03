@@ -9,6 +9,7 @@ repository contains custom react components that we use in our projects.
 [Mui Next Cookie Consent](./packages/mui-next-cookie-consent)  
 [Next Google Adsense](./packages/next-google-adsense)  
 [Next Google Analytics](./packages/next-google-analytics)  
+[Use Google Charts](./packages/use-google-charts)    
 
 ## Demo and Documentation
 [Visit for examples and documentation](https://www.amarjanica.com/projects/react-components).
