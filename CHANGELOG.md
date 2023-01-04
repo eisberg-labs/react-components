@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/eisberg-labs/react-components/compare/v3.1.0...v3.1.1) (2023-01-04)
+
+### Bug Fixes
+
+- **next-google-adsense:** fix [#11](https://github.com/eisberg-labs/react-components/issues/11) AdSense head tag doesn't support data-nscript attribute ([9770861](https://github.com/eisberg-labs/react-components/commit/9770861f3447ad34334064374f9f108488a86d0c))
+
 # [3.1.0](https://github.com/eisberg-labs/react-components/compare/v3.0.1...v3.1.0) (2023-01-03)
 
 ### Features
