@@ -1,0 +1,10 @@
+.root {
+  max-width: 345px;
+  cursor: pointer;
+}
+
+.cardmediaInner {
+  position: relative;
+  width: 100%;
+  height: 200px
+}

@@ -4,6 +4,8 @@
 Welcome to Eisberg Labs React Components, 
 repository contains custom react components that we use in our projects.
 
+[![Landing](landing.png)](https://www.amarjanica/projects/react-components)
+
 [CopyField](./packages/mui-copy-field)  
 [Google Maps Leaflet Layer](./packages/google-maps-leaflet-tile-layer)  
 [Mui Next Cookie Consent](./packages/mui-next-cookie-consent)  

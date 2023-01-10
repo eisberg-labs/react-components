@@ -1,10 +1,13 @@
 import fs from 'fs';
 import path from 'path';
 
+export const dirname = path.dirname(__filename)
+export const rootPackageDir = path.join(dirname, '..', '..', 'packages');
+
 export function readProjectDirs(): string[] {
-  return fs.readdirSync(path.join(__dirname, '..', '..', '..', '..', 'packages'), {encoding: 'utf-8'})
+  return fs.readdirSync(rootPackageDir, {encoding: 'utf-8'})
 }
 
 export function readFileFrom(project: string, file: string): string | undefined {
-  return fs.readFileSync(path.join(__dirname, '..', '..', '..', '..', 'packages', project, file), {encoding: 'utf-8'})
+  return fs.readFileSync(path.join(rootPackageDir, project, file), {encoding: 'utf-8'})
 }
