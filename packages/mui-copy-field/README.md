@@ -2,7 +2,7 @@
 # Mui Copy Field
 > Material UI TextField with copy to clipboard functionality.
 
-![Example](https://raw.githubusercontent.com/eisberg-labs/react-components/main/packages/mui-copy-field/docs/demo.gif)
+![Example](/packages/mui-copy-field/docs/demo.gif)
 
 If you 👍 or use this project, consider giving it a ★, thanks! 🙌
 

@@ -10,7 +10,7 @@
     "input",
     "mui"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/mui-copy-field#readme",
+  "homepage": "https://www.amarjanica.com/projects/react-components/mui-copy-field",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -64,5 +64,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b"
+  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b",
+  "documentation": {
+    "title": "Copy to Clipboard Text Field",
+    "thumbnail": "demo.gif"
+  }
 }
