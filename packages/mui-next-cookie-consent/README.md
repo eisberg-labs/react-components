@@ -1,3 +1,5 @@
+[![Downloads](http://img.shields.io/npm/dm/@eisberg-labs/mui-next-cookie-consent.svg)](https://npmjs.org/package/@eisberg-labs/mui-next-cookie-consent)
+
 # Mui Next Cookie Consent
 
 > React Material Ui cookie consent dialog, compatible with Nextjs cookies.

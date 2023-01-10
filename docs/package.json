@@ -20,10 +20,14 @@
     "@mui/material": "^5.11.0",
     "highlight.js": "^11.7.0",
     "leaflet": "^1.9.3",
+    "moment": "^2.29.4",
     "react-leaflet": "^4.2.0",
     "react-markdown": "^8.0.4"
   },
   "scripts": {
+    "copystatic": "ts-node src/copy-to-public",
+    "predev": "npm run copystatic",
+    "prebuild": "npm run copystatic",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -47,6 +51,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
     "typescript": "4.9.4"
   }
 }

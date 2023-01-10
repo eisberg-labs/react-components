@@ -1,7 +1,7 @@
 import {useGoogleCharts} from '@eisberg-labs/use-google-charts';
 import {useRef} from 'react';
 
-export default function BasicExample(){
+export default function UseGoogleChartsExample(){
   const chartRef = useRef<HTMLDivElement>();
   useGoogleCharts(() => {
     const data = google.visualization.arrayToDataTable([
@@ -22,8 +22,8 @@ export default function BasicExample(){
 
   return (
     <>
-    <h4>GeoChart Example</h4>
-    <div ref={chartRef}></div>
+      <h4>GeoChart Example</h4>
+      <div ref={chartRef}></div>
     </>
   )
 }

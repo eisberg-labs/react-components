@@ -256,3 +256,10 @@ iframe{
   user-select: initial;
   pointer-events: initial;
 }
+
+a {
+  text-decoration: none;
+}
+.cover {
+  object-fit: cover;
+}

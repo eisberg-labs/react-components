@@ -27,7 +27,7 @@ export default function Header({projects}) {
       color={"transparent"}
     >
       <Toolbar sx={{display: 'flex'}}>
-        <Link href={"/"} style={{textDecoration: 'none'}}>
+        <Link href={"/"} style={{textDecoration: 'none', color: 'inherit'}}>
           <Stack spacing={1} direction={"row"}>
             <img alt={"eisberg labs logo"}
                  src="https://www.eisberg-labs.com/assets/img/favicon-32x32.png"/>

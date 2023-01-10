@@ -1,3 +1,5 @@
+[![Downloads](http://img.shields.io/npm/dm/@eisberg-labs/next-google-analytics.svg)](https://npmjs.org/package/@eisberg-labs/next-google-analytics)
+
 # Next Google Analytics
 
 > NextJS React Component for Google universal analytics.

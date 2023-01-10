@@ -5,3 +5,4 @@ dist/
 .next/
 *.env
 docs/out/
+docs/public/packages

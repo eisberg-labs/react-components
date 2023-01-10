@@ -9,7 +9,7 @@
     "google",
     "analytics"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/next-google-analytics#readme",
+  "homepage": "https://www.amarjanica.com/projects/react-components/next-google-analytics",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -52,5 +52,8 @@
     "next": "^12.0.0 || ^13.0.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "documentation": {
+    "title": "Next Google Analytics"
   }
 }

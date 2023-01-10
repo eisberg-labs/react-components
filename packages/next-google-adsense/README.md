@@ -1,3 +1,5 @@
+[![Downloads](http://img.shields.io/npm/dm/@eisberg-labs/next-google-adsense.svg)](https://npmjs.org/package/@eisberg-labs/next-google-adsense)
+
 # Next Google Adsense
 
 > NextJS React Component for Google Adsense.

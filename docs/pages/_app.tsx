@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import {ThemeProvider} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Head from 'next/head';
@@ -6,6 +6,10 @@ import GoogleAnalytics from '@eisberg-labs/next-google-analytics';
 import GoogleAdsense from '@eisberg-labs/next-google-adsense';
 import {defaultTheme} from 'theme';
 import '@styles/global.scss';
+import dynamic from 'next/dynamic';
+import moment from 'moment';
+
+const CookieConsent = dynamic(()=>import('@eisberg-labs/mui-next-cookie-consent'), {suspense: true});
 
 export default function MyApp({Component, pageProps}) {
   return (
@@ -20,6 +24,12 @@ export default function MyApp({Component, pageProps}) {
         <CssBaseline/>
         <Component {...pageProps} />
       </ThemeProvider>
+      <Suspense><CookieConsent
+        cookieOptions={{
+          expires: moment().add(1, 'years').toDate()
+        }}
+        confirmText="I agree"
+      >This website uses cookie consent from <a href={`${process.env.NEXT_PUBLIC_BASE}/mui-next-cookie-consent`}>mui-next-cookie-consent</a> to enhance the user experience.</CookieConsent></Suspense>
     </>
   );
 }

@@ -4,7 +4,7 @@
 
 > Google Maps tile layer for react leaflet.
 
-![Example](https://raw.githubusercontent.com/eisberg-labs/react-components/main/packages/google-maps-leaflet-tile-layer/docs/demo.gif)
+![Example](/packages/google-maps-leaflet-tile-layer/docs/demo.gif)
 
 If you 👍 or use this project, consider giving it a ★, thanks! 🙌
 
