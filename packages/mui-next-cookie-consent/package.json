@@ -9,7 +9,7 @@
     "cookie",
     "consent"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/mui-next-cookie-consent#readme",
+  "homepage": "https://www.amarjanica.com/projects/react-components/mui-next-cookie-consent",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -57,5 +57,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b"
+  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b",
+  "documentation": {
+    "title": "Simple Cookie Consent"
+  }
 }
