@@ -8,7 +8,7 @@
     "google",
     "charts"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/use-google-charts",
+  "homepage": "https://www.amarjanica.com/projects/react-components/use-google-charts",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -55,5 +55,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "documentation": {
+    "title": "React Google Charts"
   }
 }
