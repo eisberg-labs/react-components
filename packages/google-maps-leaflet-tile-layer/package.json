@@ -1,20 +1,17 @@
 {
   "name": "@eisberg-labs/google-maps-leaflet-tile-layer",
-  "version": "3.0.1",
+  "version": "3.0.2-beta.2",
   "description": "Google Maps tile layer for react leaflet.",
   "keywords": [
     "react-leaflet",
     "google",
     "maps"
   ],
-  "homepage": "https://github.com/eisberg-labs/react-components/tree/main/packages/google-maps-leaflet-tile-layer#readme",
+  "homepage": "https://www.amarjanica.com/projects/react-components/google-maps-leaflet-tile-layer",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eisberg-labs/react-components.git"
-  },
+  "repository":"https://github.com/eisberg-labs/react-components",
   "license": "MIT",
   "author": {
     "name": "Ana Bujan - Eisberg Labs",
@@ -58,5 +55,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b"
+  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b",
+  "documentation": {
+    "title": "Google Maps Leaflet Layer",
+    "thumbnail": "demo.gif"
+  }
 }
