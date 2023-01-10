@@ -4,6 +4,7 @@ const nextConfig = {
   swcMinify: true,
   basePath: '/projects/react-components',
   images: {
+    unoptimized: true,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     domains: ['localhost', 'amarjanica.com', 'www.amarjanica.com'],
   },
