@@ -75,7 +75,12 @@ export function getStaticPaths() {
 export function getStaticProps({params}) {
   const rootDir = path.join(__filename, '..', '..', '..', '..')
   const readFrom = (...args): string => fs.readFileSync(path.join(rootDir, '..', ...args), {encoding: 'utf-8'})
-  const readDirs = (...args): string[] => fs.readdirSync(path.join(rootDir, ...args));
+  const readDirs = (...args): string[] => {
+    if (!fs.existsSync(path.join(rootDir, ...args))){
+      return [];
+    }
+    return fs.readdirSync(path.join(rootDir, ...args));
+  }
   const fixRelativePaths = (contents: string) => contents.replace('/packages', '/projects/react-components/packages')
   const {slug} = params;
   const pkg: any = projects.find(it => it.name.indexOf(slug) !== -1);

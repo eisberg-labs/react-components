@@ -185,7 +185,7 @@ export const projects = [{
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "@mui/material": "^5.0.0",
+    "@mui/base": "^5.0.0-alpha.115",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
