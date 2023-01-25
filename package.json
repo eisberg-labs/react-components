@@ -17,12 +17,12 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
-    "@babel/runtime": "^7.20.6",
+    "@babel/runtime": "^7.20.13",
     "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^23.0.4",
+    "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-terser": "^0.2.0",
-    "@rollup/plugin-typescript": "^10.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^13.4.0",
     "@types/google.visualization": "^0.0.68",
@@ -44,7 +44,7 @@
     "react-test-renderer": "^18.2.0",
     "rollup": "^2.79.1",
     "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
-    "rollup-plugin-visualizer": "^5.8.3",
+    "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.56.2",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.4"
@@ -55,5 +55,9 @@
     "docs:start": "npm --workspace docs run start",
     "docs:lint": "npm --workspace docs run lint",
     "docs:export": "npm --workspace docs run export"
+  },
+  "dependencies": {
+    "postcss": "^8.4.21",
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }
