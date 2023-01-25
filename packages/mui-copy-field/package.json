@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/mui-copy-field",
-  "version": "4.0.0",
+  "version": "4.0.2",
   "description": "Material-UI text field with copy to clipboard functionality.",
   "keywords": [
     "react",

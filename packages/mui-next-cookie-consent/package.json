@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/mui-next-cookie-consent",
-  "version": "4.0.0",
+  "version": "4.0.2",
   "description": "React Material Ui cookie consent dialog, lightweight, compatible with nextjs cookies and tailwind css.",
   "keywords": [
     "react",

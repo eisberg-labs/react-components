@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/next-image-section",
-  "version": "4.0.0",
+  "version": "4.0.2",
   "description": "Image as background, React section with lazy loaded nextjs image as background and tailwind compatible",
   "keywords": [
     "react",
