@@ -22,7 +22,8 @@
     "leaflet": "^1.9.3",
     "moment": "^2.29.4",
     "react-leaflet": "^4.2.0",
-    "react-markdown": "^8.0.4"
+    "react-markdown": "^8.0.4",
+    "remark-gfm": "^3.0.1"
   },
   "scripts": {
     "copystatic": "ts-node src/copy-to-public",

@@ -38,7 +38,7 @@ export default function Header({projects}) {
                           display: {xs: 'none', md: 'flex'},
                           textTransform: 'uppercase',
                           textDecoration: 'none'
-                        }}>Eisberg Labs Reactive Components</Typography>
+                        }}>Eisberg Labs React Components</Typography>
           </Stack>
         </Link>
         <Box sx={{flexGrow: 1}}></Box>

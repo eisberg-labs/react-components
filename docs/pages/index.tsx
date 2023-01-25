@@ -30,8 +30,6 @@ export default function Index({title, description}: { title: string, description
         <Grid item xs={12} md={12}>
           <div className={"wrapper"}>
             <div className="page-header section-dark" style={{
-              // borderBottomLeftRadius: '90% 80px',
-              // borderBottomRightRadius: '90% 80px',
               minHeight: '20vh',
               padding: '3rem',
               backgroundImage: "url('https://www.eisberg-labs.com/assets/img/iceberg-1.jpg')"
