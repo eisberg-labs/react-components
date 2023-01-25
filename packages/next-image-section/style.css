@@ -1,10 +1,10 @@
-.root {
+.image-section {
   width: 100%;
   position: relative;
   color: white;
 }
 
-.overlay {
+.image-section .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,11 +13,11 @@
   background-color: #5f656d;
 }
 
-.cover {
+.image-section .cover {
   object-fit: cover;
 }
 
-.content {
+.image-section .content {
   z-index: 1;
   position: relative;
 }

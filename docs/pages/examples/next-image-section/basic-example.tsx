@@ -1,4 +1,5 @@
 import ImageSection from '@eisberg-labs/next-image-section';
+import '@eisberg-labs/next-image-section/style.css';
 import styles from './basic-example.module.css'
 
 export default function BasicExample() {

@@ -199,7 +199,7 @@ export const projects = [{
 }
 ,{
   "name": "@eisberg-labs/next-google-adsense",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "NextJS React Component for Google Adsense.",
   "keywords": [
     "nextjs",
@@ -349,6 +349,7 @@ export const projects = [{
     "test": "__tests__"
   },
   "files": [
+    "style.css",
     "dist/**",
     "package.json",
     "README.md",
@@ -377,9 +378,6 @@ export const projects = [{
   "documentation": {
     "title": "Next Image Background Section",
     "thumbnail": "demo.png"
-  },
-  "dependencies": {
-    "classnames": "^2.3.2"
   }
 }
 ,{
