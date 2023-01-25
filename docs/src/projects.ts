@@ -136,7 +136,7 @@ export const projects = [{
 ,{
   "name": "@eisberg-labs/mui-next-cookie-consent",
   "version": "3.1.0",
-  "description": "React Material Ui cookie consent dialog, compatible with nextjs cookies.",
+  "description": "React Material Ui cookie consent dialog, lightweight, compatible with nextjs cookies and tailwind css.",
   "keywords": [
     "react",
     "material-ui",
@@ -179,13 +179,13 @@ export const projects = [{
     "test": "jest -c ../../jest.config.js"
   },
   "devDependencies": {
-    "@mui/material": "^5.10.0",
+    "@mui/base": "^5.0.0-alpha.115",
     "cookies-next": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "@mui/material": "^5.10.0",
+    "@mui/base": "^5.0.0-alpha.115",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
@@ -195,63 +195,6 @@ export const projects = [{
   "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b",
   "documentation": {
     "title": "Simple Cookie Consent"
-  }
-}
-,{
-  "name": "@eisberg-labs/mui-react-stars",
-  "version": "3.1.1",
-  "description": "React stars rating component using @mui/icons-material",
-  "keywords": [
-    "react",
-    "material-ui",
-    "star",
-    "rating",
-    "icons",
-    "mui"
-  ],
-  "homepage": "https://www.amarjanica.com/projects/react-components/mui-react-stars",
-  "bugs": {
-    "url": "https://github.com/eisberg-labs/react-components/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eisberg-labs/react-components.git"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Ana Bujan - Eisberg Labs",
-    "email": "ana@eisberg-labs.com",
-    "url": "https://www.eisberg-labs.com"
-  },
-  "sideEffects": false,
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
-  "directories": {
-    "lib": "dist",
-    "test": "__tests__"
-  },
-  "files": [
-    "dist/**",
-    "package.json",
-    "README.md",
-    "LICENSE"
-  ],
-  "scripts": {
-    "prebuild": "npm run test && npm run lint && npm run prettier",
-    "build": "rollup -c ../../rollup.config.js",
-    "lint": "eslint {src,__tests__}/**/*",
-    "prettier": "prettier --write \"./(src|__tests__)/**/*.(ts|tsx)\"",
-    "test": "jest -c ../../jest.config.js"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@mui/icons-material": "^5.10.0"
-  },
-  "documentation": {
-    "title": "Mui React Stars Rating"
   }
 }
 ,{
@@ -374,11 +317,12 @@ export const projects = [{
 ,{
   "name": "@eisberg-labs/next-image-section",
   "version": "3.1.1",
-  "description": "React Section with lazy loaded nextjs image background and tailwind compatible",
+  "description": "Image as background, React section with lazy loaded nextjs image as background and tailwind compatible",
   "keywords": [
     "react",
     "nextjs",
-    "image background",
+    "background",
+    "image",
     "lazy",
     "tailwind"
   ],
@@ -431,7 +375,11 @@ export const projects = [{
     "access": "public"
   },
   "documentation": {
-    "title": "Next Image Background Section"
+    "title": "Next Image Background Section",
+    "thumbnail": "demo.png"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2"
   }
 }
 ,{

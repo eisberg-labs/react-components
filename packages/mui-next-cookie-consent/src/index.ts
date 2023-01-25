@@ -1,3 +1,1 @@
-import CookieConsent, { CookieConsentProps } from './cookie-consent';
-export { CookieConsentProps };
-export default CookieConsent;
+export { default, CookieConsentProps } from './cookie-consent';

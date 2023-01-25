@@ -1,0 +1,23 @@
+.root {
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5f656d;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.content {
+  z-index: 1;
+  position: relative;
+}

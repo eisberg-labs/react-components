@@ -1,15 +1,16 @@
 {
-  "name": "@eisberg-labs/mui-next-cookie-consent",
-  "version": "3.1.0",
-  "description": "React Material Ui cookie consent dialog, lightweight, compatible with nextjs cookies and tailwind css.",
+  "name": "@eisberg-labs/next-image-section",
+  "version": "3.1.1",
+  "description": "Image as background, React section with lazy loaded nextjs image as background and tailwind compatible",
   "keywords": [
     "react",
-    "material-ui",
-    "mui",
-    "cookie",
-    "consent"
+    "nextjs",
+    "background",
+    "image",
+    "lazy",
+    "tailwind"
   ],
-  "homepage": "https://www.amarjanica.com/projects/react-components/mui-next-cookie-consent",
+  "homepage": "https://www.amarjanica.com/projects/react-components/next-image-section",
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
@@ -23,6 +24,7 @@
     "email": "ana@eisberg-labs.com",
     "url": "https://www.eisberg-labs.com"
   },
+  "sideEffects": false,
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -44,21 +46,23 @@
     "test": "jest -c ../../jest.config.js"
   },
   "devDependencies": {
-    "@mui/base": "^5.0.0-alpha.115",
-    "cookies-next": "^2.1.1",
+    "next": "13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "@mui/base": "^5.0.0-alpha.115",
+    "next": "^12.0.0 || ^13.0.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "1ba37d085031a3cafd6e3629c7114d9ddd73c64b",
   "documentation": {
-    "title": "Simple Cookie Consent"
+    "title": "Next Image Background Section",
+    "thumbnail": "demo.png"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2"
   }
 }

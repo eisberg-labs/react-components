@@ -6,6 +6,7 @@ import NpmDownloads from './npm-downloads';
 import {useRouter} from 'next/router';
 import Image from 'next/image';
 import styles from './package-card.module.css';
+import NpmPackageSize from './npm-package-size';
 
 export default function PackageCard({pkg}: { pkg: { [key: string]: any } }) {
   const pkgname = pkg.name.split('/')[1];
@@ -34,6 +35,7 @@ export default function PackageCard({pkg}: { pkg: { [key: string]: any } }) {
       </CardContent>
       <CardActions>
         <NpmDownloads name={pkg.name}/>
+        <NpmPackageSize name={pkg.name}/>
       </CardActions>
     </Card>
   )
