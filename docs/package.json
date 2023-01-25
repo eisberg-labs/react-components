@@ -14,6 +14,7 @@
     "@eisberg-labs/next-google-adsense": "*",
     "@eisberg-labs/next-google-analytics": "*",
     "@eisberg-labs/use-google-charts": "*",
+    "@eisberg-labs/next-image-section": "*",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
