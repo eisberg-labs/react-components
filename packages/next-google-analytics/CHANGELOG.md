@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/eisberg-labs/react-components/compare/v3.1.1...v4.0.0) (2023-01-25)
+
+**Note:** Version bump only for package @eisberg-labs/next-google-analytics
+
+
+
+
+
 # [3.1.0](https://github.com/eisberg-labs/react-components/compare/v3.0.1...v3.1.0) (2023-01-03)
 
 **Note:** Version bump only for package @eisberg-labs/next-google-analytics

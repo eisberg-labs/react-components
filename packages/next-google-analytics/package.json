@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/next-google-analytics",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "NextJS React Component for Google universal analytics.",
   "keywords": [
     "nextjs",

@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/google-maps-leaflet-tile-layer",
-  "version": "3.0.2-beta.2",
+  "version": "4.0.0",
   "description": "Google Maps tile layer for react leaflet.",
   "keywords": [
     "react-leaflet",
@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
-  "repository":"https://github.com/eisberg-labs/react-components",
+  "repository": "https://github.com/eisberg-labs/react-components",
   "license": "MIT",
   "author": {
     "name": "Ana Bujan - Eisberg Labs",

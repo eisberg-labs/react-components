@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/use-google-charts",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "Google charts context loader for React components, loosely typed.",
   "keywords": [
     "google-charts",
