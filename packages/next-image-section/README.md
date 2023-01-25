@@ -18,8 +18,10 @@ npm i --save @eisberg-labs/next-image-section
 ```
 
 ## Usage
+Import style.css in your global css file or directly in the component:
 ```jsx
 import ImageSection from '@eisberg-labs/next-image-section';
+import '@eisberg-labs/next-image-section/style.css';
 
 <ImageSection
   src={"https://pixabay.com/images/id-2748776"}

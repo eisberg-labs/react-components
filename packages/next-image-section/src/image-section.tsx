@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './image-section.module.css';
-import classNames from 'classnames';
 
 export interface Props {
   src: string;
@@ -20,23 +18,10 @@ export default function ImageSection({
   containerClassName = 'container',
 }: React.PropsWithChildren<Props>) {
   return (
-    <section
-      className={classNames({
-        [styles.root]: true,
-        'py-2': true,
-        [rootClassName ?? '']: !!rootClassName,
-      })}
-    >
-      <Image priority={true} src={src} fill className={styles.cover} alt={alt} />
-      <div className={styles.overlay} style={{ opacity: opacity ?? 0.6 }} />
-      <div
-        className={classNames({
-          [styles.content]: true,
-          [containerClassName ?? '']: !!containerClassName,
-        })}
-      >
-        {children}
-      </div>
+    <section className={`image-section ${rootClassName ?? ''}`}>
+      <Image priority={true} src={src} fill className={'cover'} alt={alt} />
+      <div className={'overlay'} style={{ opacity: opacity ?? 0.6 }} />
+      <div className={`content ${containerClassName ?? ''}`}>{children}</div>
     </section>
   );
 }

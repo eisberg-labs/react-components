@@ -6,3 +6,4 @@ dist/
 *.env
 docs/out/
 docs/public/packages
+docs/src/projects.ts

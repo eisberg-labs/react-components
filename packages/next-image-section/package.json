@@ -33,13 +33,14 @@
     "test": "__tests__"
   },
   "files": [
+    "style.css",
     "dist/**",
     "package.json",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "prebuild": "npm run test && npm run lint && npm run prettier",
+    "prebuild": "rm -rf dist && npm run test && npm run lint && npm run prettier",
     "build": "rollup -c ../../rollup.config.js",
     "lint": "eslint {src,__tests__}/**/*",
     "prettier": "prettier --write \"./(src|__tests__)/**/*.(ts|tsx)\"",
@@ -61,8 +62,5 @@
   "documentation": {
     "title": "Next Image Background Section",
     "thumbnail": "demo.png"
-  },
-  "dependencies": {
-    "classnames": "^2.3.2"
   }
 }

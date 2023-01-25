@@ -12,6 +12,11 @@ for (const dirName of projects) {
     })
 
 }
-const projectsStr = projects.map(project => readFileFrom(project, 'package.json'));
+const projectsStr = projects.map(project => {
+  const pkgJson = JSON.parse(readFileFrom(project, 'package.json'));
+  delete pkgJson['scripts'];
+  delete pkgJson['gitHead'];
+  return JSON.stringify(pkgJson);
+});
 fs.writeFileSync(path.join(dirname, 'projects.ts'), `export const projects = [${projectsStr}];`);
 
