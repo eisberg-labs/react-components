@@ -1,7 +1,7 @@
 {
   "name": "@eisberg-labs/mui-next-cookie-consent",
   "version": "3.1.0",
-  "description": "React Material Ui cookie consent dialog, compatible with nextjs cookies.",
+  "description": "React Material Ui cookie consent dialog, lightweight, compatible with nextjs cookies and tailwind css.",
   "keywords": [
     "react",
     "material-ui",
@@ -44,13 +44,13 @@
     "test": "jest -c ../../jest.config.js"
   },
   "devDependencies": {
-    "@mui/material": "^5.10.0",
+    "@mui/base": "^5.0.0-alpha.115",
     "cookies-next": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "@mui/material": "^5.10.0",
+    "@mui/base": "^5.0.0-alpha.115",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },

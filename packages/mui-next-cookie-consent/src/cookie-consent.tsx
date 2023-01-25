@@ -1,12 +1,8 @@
 import React, { startTransition, useEffect, useState } from 'react';
 import { setCookie, hasCookie } from 'cookies-next';
 
-import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
-import Snackbar from '@mui/material/Snackbar';
+import SnackbarUnstyled from '@mui/base/SnackbarUnstyled';
 import { CookieSerializeOptions } from 'cookie';
-import { SxProps } from '@mui/system';
-import { Theme } from '@mui/material/styles';
 
 export interface CookieConsentProps {
   /**
@@ -18,11 +14,6 @@ export interface CookieConsentProps {
    */
   confirmText?: React.ReactNode;
   /**
-   * Button variant. Default is text.
-   */
-  buttonVariant?: 'text' | 'outlined' | 'contained';
-
-  /**
    * Cookie options, you can set expire here.
    */
   cookieOptions?: CookieSerializeOptions;
@@ -31,26 +22,43 @@ export interface CookieConsentProps {
    */
   onAccept?: () => void;
   /**
-   * Define styling of the cookie consent container.
+   * Set snackbarClassName
+   * @default "fixed p-3 z-50 bottom-0"
    */
-  sx?: SxProps<Theme>;
+  snackBarClassName?: string;
+  /**
+   * Define styling of the cookie consent container.
+   * @default "rounded-lg bg-white shadow-2xl p-3"
+   */
+  rootClassName?: string;
   /**
    * Define styling of the button.
+   * @default 'bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'
    */
-  buttonSx?: SxProps<Theme>;
+  buttonClassName?: string;
 }
 
 const defaultProps: CookieConsentProps = {
-  sx: { background: 'white', p: 3 },
-  buttonSx: {},
+  rootClassName: 'rounded-lg bg-white shadow-2xl p-3',
+  snackBarClassName: 'fixed p-3 z-50 bottom-0',
+  buttonClassName:
+    'bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow',
   defaultName: 'CookieConsent',
   cookieOptions: undefined,
   confirmText: 'I understand',
-  buttonVariant: 'text',
 };
 export default function CookieConsent(props: React.PropsWithChildren<CookieConsentProps>) {
   const [visible, setVisible] = useState(false);
-  const { defaultName, cookieOptions, confirmText, sx, buttonSx, children, buttonVariant, onAccept } = {
+  const {
+    defaultName,
+    cookieOptions,
+    confirmText,
+    buttonClassName,
+    rootClassName,
+    children,
+    snackBarClassName,
+    onAccept,
+  } = {
     ...defaultProps,
     ...props,
   };
@@ -73,13 +81,13 @@ export default function CookieConsent(props: React.PropsWithChildren<CookieConse
   }
 
   return (
-    <Snackbar open={visible} onClose={handleAccept}>
-      <Paper id={defaultName} sx={sx} elevation={3}>
+    <SnackbarUnstyled open={visible} onClose={handleAccept} className={snackBarClassName}>
+      <div id={defaultName} className={rootClassName}>
         {children}&nbsp;
-        <Button variant={buttonVariant} aria-describedby={defaultName} sx={buttonSx} onClick={handleAccept}>
+        <button aria-describedby={defaultName} className={buttonClassName} onClick={handleAccept}>
           {confirmText}
-        </Button>
-      </Paper>
-    </Snackbar>
+        </button>
+      </div>
+    </SnackbarUnstyled>
   );
 }
