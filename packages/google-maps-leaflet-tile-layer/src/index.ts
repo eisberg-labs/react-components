@@ -1,1 +1,2 @@
-export { GoogleLayer } from './google-layer';
+import GoogleLayer from './google-layer';
+export default GoogleLayer;
