@@ -1,6 +1,6 @@
 export const projects = [{
   "name": "@eisberg-labs/google-maps-leaflet-tile-layer",
-  "version": "3.0.2-beta.2",
+  "version": "4.0.0",
   "description": "Google Maps tile layer for react leaflet.",
   "keywords": [
     "react-leaflet",
@@ -11,7 +11,7 @@ export const projects = [{
   "bugs": {
     "url": "https://github.com/eisberg-labs/react-components/issues"
   },
-  "repository":"https://github.com/eisberg-labs/react-components",
+  "repository": "https://github.com/eisberg-labs/react-components",
   "license": "MIT",
   "author": {
     "name": "Ana Bujan - Eisberg Labs",
@@ -63,7 +63,7 @@ export const projects = [{
 }
 ,{
   "name": "@eisberg-labs/mui-copy-field",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Material-UI text field with copy to clipboard functionality.",
   "keywords": [
     "react",
@@ -135,7 +135,7 @@ export const projects = [{
 }
 ,{
   "name": "@eisberg-labs/mui-next-cookie-consent",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "React Material Ui cookie consent dialog, lightweight, compatible with nextjs cookies and tailwind css.",
   "keywords": [
     "react",
@@ -199,7 +199,7 @@ export const projects = [{
 }
 ,{
   "name": "@eisberg-labs/next-google-adsense",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "NextJS React Component for Google Adsense.",
   "keywords": [
     "nextjs",
@@ -257,7 +257,7 @@ export const projects = [{
 }
 ,{
   "name": "@eisberg-labs/next-google-analytics",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "NextJS React Component for Google universal analytics.",
   "keywords": [
     "nextjs",
@@ -316,7 +316,7 @@ export const projects = [{
 }
 ,{
   "name": "@eisberg-labs/next-image-section",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "Image as background, React section with lazy loaded nextjs image as background and tailwind compatible",
   "keywords": [
     "react",
@@ -384,7 +384,7 @@ export const projects = [{
 }
 ,{
   "name": "@eisberg-labs/use-google-charts",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "Google charts context loader for React components, loosely typed.",
   "keywords": [
     "google-charts",
