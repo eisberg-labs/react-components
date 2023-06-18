@@ -1,0 +1,3 @@
+[submodule "packages/next-google-analytics"]
+	path = packages/next-google-analytics
+	url = https://github.com/eisberg-labs/next-google-analytics
